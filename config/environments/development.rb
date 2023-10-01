@@ -23,6 +23,9 @@ Rails.application.configure do
     config.action_controller.perform_caching = false
 
     config.cache_store = :null_store
+    config.cache_classes = false
+
+    config.reload_classes_only_on_change = true
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
